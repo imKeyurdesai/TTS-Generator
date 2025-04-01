@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Winky sans', sans-serif;
+    font-weight: 500;
+}
+
+nav {
+    background-color: #ffc849;
+    height: 10vh;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.navsub {
+    font-size: 15px;
+}
+
+main {
+    margin: 10px 0;
+    padding: 5vw 10vw;
+    display: flex;
+    gap: 15px;
+
+}
+
+#text {
+    height: 70vh;
+    width: 50vw;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+select {
+    height: 8vh;
+    width: 35vw;
+    border-top: 2px solid #183153;
+    border-right: 2px solid #183153;
+    border-left: 2px solid #183153;
+    border-bottom: 10px solid #183153;
+    border-radius: 10px 10px 12px 12px;
+    -webkit-border-radius: 10px 10px 12px 12px;
+    -moz-border-radius: 10px 10px 12px 12px;
+}
+
+.button-1 {
+    align-items: center;
+    background-color: #ecca21;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-1:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.button-1:hover:after {
+    transform: translate(0, 0);
+}
+
+.button-1:active {
+    background-color: #ffdeda;
+    outline: 0;
+}
+
+.button-1:hover {
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    .button-1 {
+        padding: 0 40px;
+    }
+}
