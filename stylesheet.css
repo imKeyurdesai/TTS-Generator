@@ -41,6 +41,11 @@ main {
     gap: 18px;
 }
 
+#text{
+    padding: 15px;
+    font-size: 20px;
+}
+
 select {
     height: 8vh;
     width: 35vw;
@@ -105,8 +110,22 @@ select {
     outline: 0;
 }
 
-@media (min-width: 768px) {
-    .button-1 {
-        padding: 0 40px;
+@media only screen and (max-width : 600px) {
+    nav{
+        height: 15vh;
+    }
+    .navsub{
+        display: block;
+        text-align: end;
+    }
+    main{
+        flex-direction: column;
+    }
+    #text {
+        height: 50vh;
+        width: 70vw;
+    }
+    select{
+        width: 315px;
     }
 }
