@@ -16,11 +16,19 @@
     <main>
     <textarea id="text" placeholder="Enter text..."></textarea>
     <div class="option">
-        <h2>Language Models</h2>
+        <div class="languagemodel">
+            <div class="lang">
+        <h2>Language</h2>
         <select id="voiceSelect"></select>
-        Speed <input type="range" id="rate" min="0.5" max="2" step="0.01" value="1"> 
-        Pitch <input type="range" id="pitch" min="0" max="2" step="0.01" value="1"> 
-    <button class="button-1" onclick="speak()">Speak</button>
+    </div>
+    <div class="model">
+        <h2>Model</h2>
+        <select id="model"></select>
+    </div>
+    </div>
+        <h3>Speed</h3> <input type="range" id="rate" min="0.5" max="2" step="0.01" value="1">
+       <h3>Pitch</h3> <input type="range" id="pitch" min="0" max="2" step="0.01" value="1">
+    <button class="button-1" id="speak" onclick="speak()"> <i class="fas fa-volume-up"></i>Speak</button>
     <button class="button-1" onclick="downloadAudio()">Download MP3</button>
 </div>
     </main>

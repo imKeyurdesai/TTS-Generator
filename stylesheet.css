@@ -41,14 +41,23 @@ main {
     gap: 18px;
 }
 
-#text{
+#text {
     padding: 15px;
     font-size: 20px;
+}
+p{
+ display: inline;
+}
+
+.languagemodel {
+    display: flex;
+    gap: 10px;
 }
 
 select {
     height: 8vh;
-    width: 35vw;
+    width: 15vw;
+    cursor: pointer;
     border-top: 2px solid #183153;
     border-right: 2px solid #183153;
     border-left: 2px solid #183153;
@@ -59,7 +68,6 @@ select {
 }
 
 .button-1 {
-    align-items: center;
     background-color: #ecca21;
     border: 2px solid #111;
     border-radius: 8px;
@@ -70,8 +78,8 @@ select {
     font-family: Inter, sans-serif;
     font-size: 16px;
     height: 48px;
+    align-items: center;
     justify-content: center;
-    line-height: 24px;
     max-width: 100%;
     padding: 0 25px;
     position: relative;
@@ -101,31 +109,35 @@ select {
     transform: translate(0, 0);
 }
 
-.button-1:active {
-    background-color: #ffdeda;
-    outline: 0;
-}
-
 .button-1:hover {
     outline: 0;
 }
 
 @media only screen and (max-width : 600px) {
-    nav{
+    nav {
         height: 15vh;
     }
-    .navsub{
+
+    .navsub {
         display: block;
         text-align: end;
     }
-    main{
+
+    main {
         flex-direction: column;
     }
+
     #text {
         height: 50vh;
         width: 70vw;
     }
-    select{
-        width: 315px;
+
+    .languagemodel {
+        flex-direction: column;
+    }
+
+    select {
+        width: 50vw;
+        height: 8vh;
     }
 }
